@@ -24,7 +24,7 @@ class OpeningPageViewController: UIViewController {
     func getData(){
         
         do {
-            let url = NSURL(string: "https://compe.hku.edu.tr/category/ilanlar/")
+            let url = NSURL(string: "url")
             print(url!)
             let html = try NSString(contentsOf: url! as URL, encoding: String.Encoding.utf8.rawValue)
             let document: Document = try SwiftSoup.parse(html as String)
